@@ -1,11 +1,11 @@
 .button {
-  border: none;
-  background: #212121f0;
-  color: #fafafa;
+  border: 1px solid #21212120;
   padding: 10px 30px;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
+  background-color: #fafafaf0;
+  color: #212121;
   transition: all 100ms ease-in;
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
@@ -18,8 +18,8 @@
 
 
 .button:hover:not(:disabled) {
-  background: #212121;
-  outline-color: #fafafa;
+  background-color: #fafafa;
+  outline-color: #212121;
   scale: 1.05;
 }
 
@@ -28,8 +28,20 @@
   box-shadow: none;
 }
 
+.buttonDarkMode {
+  border: 1px solid #fafafa20;
+  background: #212121f0;
+  color: #fafafa;
+}
+
+.buttonDarkMode:hover:not(:disabled) {
+  background-color: #212121;
+  outline-color: #fafafa;
+}
+
 .buttonPrimary {
   background-color: #9266ccf0;
+  color: #fafafa;
 }
 
 .buttonPrimary:hover:not(:disabled) {

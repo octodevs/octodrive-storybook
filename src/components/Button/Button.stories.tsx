@@ -15,7 +15,8 @@ export const Default = Template.bind({})
 Default.args = {
   primary: false,
   label: 'Button',
-  disabled: false
+  disabled: false,
+  darkMode: false
 }
 
 export const Primary = Template.bind({})
@@ -23,7 +24,17 @@ export const Primary = Template.bind({})
 Primary.args = {
   primary: true,
   label: 'Button',
-  disabled: false
+  disabled: false,
+  darkMode: false
+}
+
+export const DarkMode = Template.bind({})
+
+DarkMode.args = {
+  primary: false,
+  label: 'Button',
+  disabled: false,
+  darkMode: true
 }
 
 export const Disabled = Template.bind({})
@@ -31,5 +42,6 @@ export const Disabled = Template.bind({})
 Disabled.args = {
   primary: false,
   label: 'Button',
-  disabled: true
+  disabled: true,
+  darkMode: false
 }
