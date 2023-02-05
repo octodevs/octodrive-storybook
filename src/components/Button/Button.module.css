@@ -1,0 +1,42 @@
+.button {
+  border: none;
+  background: #212121f0;
+  color: #fafafa;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px #9266cc;
+}
+
+
+.button:hover:not(:disabled) {
+  background: #212121;
+  outline-color: #fafafa;
+  scale: 1.05;
+}
+
+.button:active:not(:disabled) {
+  scale: 1;
+  box-shadow: none;
+}
+
+.buttonPrimary {
+  background-color: #9266ccf0;
+}
+
+.buttonPrimary:hover:not(:disabled) {
+  background-color: #9266cc;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: inherit;
+}
