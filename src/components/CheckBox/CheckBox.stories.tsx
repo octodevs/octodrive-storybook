@@ -38,7 +38,7 @@ export const Radio = RadioTemplate.bind({})
 Radio.args = {
   radio: true,
   disabled: false,
-  name: 'radio',
+  radioGroup: 'group1',
   label: 'Radio'
 }
 
@@ -47,6 +47,6 @@ export const RadioDisabled = RadioTemplate.bind({})
 RadioDisabled.args = {
   radio: true,
   disabled: true,
-  name: 'radio',
+  radioGroup: 'group1',
   label: 'Radio'
 }

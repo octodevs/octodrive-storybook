@@ -6,17 +6,17 @@ interface Props {
   radio?: boolean
   disabled?: boolean
   checked?: boolean
-  name?: string
+  radioGroup?: string
   onChange: (checked: boolean) => void
 }
 
-const CheckBox: FC<Props> = ({ label, disabled, radio, onChange, checked, name }) =>
+const CheckBox: FC<Props> = ({ label, disabled, radio, onChange, checked, radioGroup }) =>
   <label className={style.checkBox}>
     <input
-      name={name}
       checked={checked}
       disabled={disabled}
       onChange={(e) => { onChange(e.target.checked) }}
+      name={radio === true ? radioGroup : undefined}
       type={radio === true ? 'radio' : 'checkbox'} />
 
     <div className={style.label}>

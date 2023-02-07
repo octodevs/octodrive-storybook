@@ -2,18 +2,7 @@ import { type ComponentStory, type ComponentMeta } from '@storybook/react'
 import InputBox from './InputBox'
 
 const InputBoxStory: ComponentMeta<typeof InputBox> = {
-  component: InputBox,
-  argTypes: {
-    type: {
-      options: ['text', 'password'],
-      control: { type: 'select' },
-      defaultValue: 'text',
-      table: {
-        type: { summary: 'string' },
-        defaultValue: { summary: 'text' }
-      }
-    }
-  }
+  component: InputBox
 }
 
 export default InputBoxStory
@@ -24,7 +13,7 @@ const Template: ComponentStory<typeof InputBox> = (args) =>
 export const Default = Template.bind({})
 
 Default.args = {
-  type: 'text',
+  hideText: false,
   placeholder: 'Placeholder',
   disabled: false
 }
@@ -32,7 +21,7 @@ Default.args = {
 export const Disabled = Template.bind({})
 
 Disabled.args = {
-  type: 'text',
+  hideText: false,
   placeholder: 'Placeholder',
   disabled: true
 }
