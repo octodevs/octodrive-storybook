@@ -17,5 +17,5 @@
 .button:hover:not(:disabled) {
   border-color: transparent;
   background-color: #fff;
-  color: #212;
+  color: #212121;
 }

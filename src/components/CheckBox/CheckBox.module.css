@@ -1,0 +1,39 @@
+.checkBox > .label {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.checkBox > input {
+  display: none;
+}
+
+.checkBox > input:checked ~ .label {
+  border-color: transparent;
+  background-color: #fff;
+  color: #212121;
+}
+
+.checkBox > input[type="checkbox"]:checked:not(:disabled) ~ .label:hover:not(:disabled) {
+  border-color: transparent;
+  background-color: #cc0000;
+  color: #fff;
+}
+
+.checkBox > input:disabled ~ .label {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.checkBox > input:not(:disabled) ~ .label:hover {
+  border-color: transparent;
+  background-color: #fff;
+  color: #212121;
+}
+
