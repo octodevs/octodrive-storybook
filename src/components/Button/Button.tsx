@@ -5,19 +5,17 @@ import style from './Button.module.css'
 interface Props {
   label: string
   primary?: boolean
-  darkMode?: boolean
   disabled?: boolean
   onClick?: () => any
 }
 
-const Button: FC<Props> = ({ label, disabled, primary, darkMode, onClick }) =>
+const Button: FC<Props> = ({ label, disabled, primary, onClick }) =>
   <button
     onClick={onClick}
     disabled={disabled ?? false}
     className={clsx(
       style.button,
-      primary === true && style.buttonPrimary,
-      darkMode === true && style.buttonDarkMode)}>
+      primary === true && style.buttonPrimary)}>
     {label}
   </button>
 

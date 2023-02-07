@@ -1,54 +1,31 @@
 .button {
-  border: 1px solid #21212120;
-  padding: 10px 30px;
-  border-radius: 5px;
-  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+  padding: 1px 15px;
+  font-size: 12px;
   cursor: pointer;
-  background-color: #fafafaf0;
-  color: #212121;
-  transition: all 100ms ease-in;
-  backdrop-filter: blur(10px);
-  --webkit-backdrop-filter: blur(10px);
-}
-
-.button:focus {
-  outline: none;
-  box-shadow: 0px 0px 3px #9266cc;
-}
-
-
-.button:hover:not(:disabled) {
-  background-color: #fafafa;
-  outline-color: #212121;
-  scale: 1.05;
-}
-
-.button:active:not(:disabled) {
-  scale: 1;
-  box-shadow: none;
-}
-
-.buttonDarkMode {
-  border: 1px solid #fafafa20;
-  background: #212121f0;
-  color: #fafafa;
-}
-
-.buttonDarkMode:hover:not(:disabled) {
-  background-color: #212121;
-  outline-color: #fafafa;
-}
-
-.buttonPrimary {
-  background-color: #9266ccf0;
-  color: #fafafa;
-}
-
-.buttonPrimary:hover:not(:disabled) {
-  background-color: #9266cc;
+  transition: all 0.1s ease-in;
 }
 
 .button:disabled {
   opacity: 0.5;
-  cursor: inherit;
+  cursor: default;
+}
+
+.button:hover:not(:disabled) {
+  border-color: transparent;
+  background-color: #aaa;
+  color: #212;
+}
+
+.buttonPrimary {
+  border-color: #9266cc;
+  color: #fff;
+}
+
+.buttonPrimary:hover:not(:disabled) {
+  background-color: #9266cc;
+  color: #fff;
 }
