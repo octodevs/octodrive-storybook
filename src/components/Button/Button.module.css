@@ -1,5 +1,5 @@
 .button {
-  border: 1px solid #aaa;
+  border: 1px solid #fff;
   border-radius: 0px;
   background-color: transparent;
   color: #fff;
@@ -16,16 +16,6 @@
 
 .button:hover:not(:disabled) {
   border-color: transparent;
-  background-color: #aaa;
+  background-color: #fff;
   color: #212;
-}
-
-.buttonPrimary {
-  border-color: #9266cc;
-  color: #fff;
-}
-
-.buttonPrimary:hover:not(:disabled) {
-  background-color: #9266cc;
-  color: #fff;
 }

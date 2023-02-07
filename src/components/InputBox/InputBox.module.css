@@ -1,0 +1,26 @@
+.inputBox {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: text;
+  border-bottom: 1px solid #aaa;
+  transition: all 0.1s ease-in;
+  padding: 1px 5px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.inputBox::placeholder {
+  opacity: 1;
+  color: #aaa;
+}
+
+.inputBox:focus:not(:disabled) {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.inputBox:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

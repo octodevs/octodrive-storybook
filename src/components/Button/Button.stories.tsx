@@ -13,15 +13,6 @@ const Template: ComponentStory<typeof Button> = (args) =>
 export const Default = Template.bind({})
 
 Default.args = {
-  primary: false,
-  label: 'Button',
-  disabled: false
-}
-
-export const Primary = Template.bind({})
-
-Primary.args = {
-  primary: true,
   label: 'Button',
   disabled: false
 }
@@ -29,7 +20,6 @@ Primary.args = {
 export const Disabled = Template.bind({})
 
 Disabled.args = {
-  primary: false,
   label: 'Button',
   disabled: true
 }
