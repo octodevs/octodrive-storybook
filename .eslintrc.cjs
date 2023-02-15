@@ -22,5 +22,9 @@ module.exports = {
     'react'
   ],
   rules: {
-  }
+  },
+  ignorePatterns: [
+    'dist/**/*',
+    'src/**/*.stories.tsx'
+  ]
 }
