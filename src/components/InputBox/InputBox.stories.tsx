@@ -14,6 +14,16 @@ export const Default = Template.bind({})
 
 Default.args = {
   hideText: false,
+  label: '',
+  placeholder: 'Placeholder',
+  disabled: false
+}
+
+export const WithLabel = Template.bind({})
+
+WithLabel.args = {
+  hideText: false,
+  label: 'label',
   placeholder: 'Placeholder',
   disabled: false
 }
