@@ -2,7 +2,7 @@
   "name": "@octodevs/octodrive-ui",
   "version": "1.1.2",
   "type": "module",
-  "main": "dist/main.ts",
+  "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
