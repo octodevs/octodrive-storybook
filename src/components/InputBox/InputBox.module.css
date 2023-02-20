@@ -6,6 +6,13 @@
   transform: translateY(5px);
 }
 
+.error {
+  margin: 0px;
+  padding: 0px 3px;
+  color: #cc0000;
+  font-size: 12px;;
+}
+
 .inputBox {
   border: none;
   background-color: transparent;
@@ -16,6 +23,10 @@
   padding: 1px 5px;
   width: 100%;
   font-size: 12px;
+}
+
+.inputBox.error {
+  border-bottom-color: #cc0000;
 }
 
 .inputBox::placeholder {

@@ -21,8 +21,10 @@ export const InputBox: FC<Props> = ({ hideText, label, value, onChange, placehol
       disabled={disabled}
       placeholder={placeholder}
       onChange={(e) => { onChange?.(e.target.value) }}
-      className={clsx(style.inputBox, error !== undefined && style.error)}
+      className={clsx(style.inputBox, error !== undefined && error.length > 0 && style.error)}
       type={hideText === true ? 'password' : 'text'} />
+
+    <p className={style.error}>{error}</p>
   </label>
 
 export default InputBox

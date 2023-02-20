@@ -15,6 +15,7 @@ export const Default = Template.bind({})
 Default.args = {
   hideText: false,
   label: '',
+  error: undefined,
   placeholder: 'Placeholder',
   disabled: false
 }
@@ -24,6 +25,15 @@ export const WithLabel = Template.bind({})
 WithLabel.args = {
   hideText: false,
   label: 'label',
+  placeholder: 'Placeholder',
+  disabled: false
+}
+
+export const WithError = Template.bind({})
+
+WithError.args = {
+  hideText: false,
+  error: 'Error',
   placeholder: 'Placeholder',
   disabled: false
 }
