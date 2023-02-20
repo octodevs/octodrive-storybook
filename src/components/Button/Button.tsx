@@ -7,7 +7,7 @@ interface Props {
   onClick?: () => any
 }
 
-const Button: FC<Props> = ({ label, disabled, onClick }) =>
+export const Button: FC<Props> = ({ label, disabled, onClick }) =>
   <button
     onClick={onClick}
     disabled={disabled ?? false}

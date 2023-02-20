@@ -10,7 +10,7 @@ interface Props {
   onChange: (checked: boolean) => void
 }
 
-const CheckBox: FC<Props> = ({ label, disabled, radio, onChange, checked, radioGroup }) =>
+export const CheckBox: FC<Props> = ({ label, disabled, radio, onChange, checked, radioGroup }) =>
   <label className={style.checkBox}>
     <input
       checked={checked}

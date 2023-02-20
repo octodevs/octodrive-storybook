@@ -10,7 +10,7 @@ interface Props {
   onChange?: (value: string) => any
 }
 
-const InputBox: FC<Props> = ({ hideText, value, onChange, placeholder, disabled }) =>
+export const InputBox: FC<Props> = ({ hideText, value, onChange, placeholder, disabled }) =>
   <input
     value={value}
     disabled={disabled}
